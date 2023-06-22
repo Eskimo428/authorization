@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авторизация</title>    
+ 
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+    <header class="header">
+      
+        <h1 class="header__title">
+          «Хранение состояния на клиенте». Авторизация.
+        </h1>
+    </header>
+    <main class="content">
+        <div class="card">
+            <span class="data">
+                Логин - demo
+            </span>
+            <span class="data">
+                Пароль - demo
+            </span>
+            <div class="signin signin_active" id="signin">
+                <h2 class="title">Вход</h2>
+                <form class="form" id="signin__form">
+                    <div class="row">
+                        <input type="text" name="login" class="control login" placeholder="Логин" autofocus>
+                    </div>
+                    <div class="row">
+                        <input type="password" name="password" class="control password" placeholder="Пароль" >
+                    </div>
+                    <div class="row">
+                        <button class="btn" id="signin__btn">Войти</button>
+                    </div>
+                </form>
+            </div>
+            <div class="welcome" id="welcome">
+                Добро пожаловать, пользователь #<span id="user_id"></span>
+
+                <div class="avatar"></div>
+                <a class="log-out" href=" ">Выйти из аккаунта</a>
+            </div>
+        </div>
+        </main>    
+    <script src="./script.js"></script>
+</body>
+</html>
